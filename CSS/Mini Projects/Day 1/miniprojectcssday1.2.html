@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: blue;
+            text-align: center;
+        }
+    
+        tr:nth-child(even){
+            background-color: red;
+        }
+        td:nth-child(2){
+            background-color: lightgreen;
+        }
+        td:nth-child(1)::before{
+            content: "☺️";
+        }
+        input:focus{
+            background-color: pink;
+        }
+        label{
+            background: linear-gradient(red,lightgreen,pink);
+        }
+        button:hover{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        h3{
+            color: yellow;
+            background-color: black
+        }
+        .container{
+            display: flex;
+            border: 2px solid black;
+            gap: 5px;
+            width: 500px;
+
+        }
+        .basic{
+            background-color: red;
+        }
+        .pro{
+            background-color: blue;
+        }
+        .premium{
+            background-color: green;
+        }
+        .feature1{
+            list-style: none;
+        }
+        .feature2{
+            list-style: none;
+        }
+        .feature3{
+            list-style: none;
+        }
+        li::before{
+            content: '👉';
+        }
+        .pro:hover{
+            background-color: yellow;
+            font-size: large;
+        }
+        .container1{
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        img{
+            width: 30%;
+            height: 30%;
+            object-fit: cover;
+        }
+        img:hover{
+            width: 350px;
+        }
+            
+
+    
+    </style>
+</head>
+<body>
+    <h2>Mini Project 5</h2>
+    <h3>Product Comparison</h3>
+    <table border="2">
+        <tr>
+            <th>Feature</th>
+            <th>Apple iPhone</th>
+            <th>Samsung Galaxy</th>
+            <th>Oneplus</th>
+        </tr>
+        <tr>
+            <td>OS</td>
+            <td>iOS</td>
+            <td>One UI</td>
+            <td>Oxygen OS</td>
+        </tr>
+        <tr>
+            <td>Camera</td>
+            <td>Natural Skin tone</td>
+            <td>Extreme zoom</td>
+            <td>Fast capture</td>
+        </tr>
+        <tr>
+            <td>Charging</td>
+            <td>Slow</td>
+            <td>Moderate</td>
+            <td>Ultra fast</td>
+        </tr>
+        <tr>
+            <td>Eco System</td>
+            <td>Leading</td>
+            <td>Strong</td>
+            <td>Growing</td>
+        </tr>
+    </table><br><br>
+    <hr>
+    <h2>Mini Project 6</h2>
+    <h3>Login Form</h3>
+    <form>
+        <label>Enter your Name</label>
+        <input type="text"><br><br>
+        <label>Enter your Email ID</label>
+        <input type="email"><br><br>
+        <label>Enter your Phone Number</label>
+        <input type="number"><br><br>
+        <button type=submit>Login</button>
+    </form>
+    <hr>
+    <h3>Sign up Form</h3>
+    <form>
+        <label>Enter your Name</label>
+        <input type="text"><br><br>
+        <label>Enter your Email ID</label>
+        <input type="email"><br><br>
+        <label>Enter your Phone Number</label>
+        <input type="number"><br><br>
+        <button type=submit>Sign up</button>
+    </form><br><br>
+    <hr>
+    <h2>Mini Project 7</h2>
+    <h3>Pricing Cards</h3>
+    <div class="container">
+        <div class="basic">Basic Plan
+            <p>Price:$10</p>
+        <ul class="feature1">
+            <li> 1 User</li>
+            <li>5 GB Storage</li>
+            <li>Basic Support</li>
+        </ul>
+        </div>
+        <div class="pro">Pro Plan
+             <P>Price:$25</P>
+            <ul class="feature2">
+                <li>5 User</li>
+                <li>50 GB Storage</li>
+                <li>Priority Support</li>
+            </ul>
+        </div>
+        <div class="premium">Premium
+            <p>Price:$40</p>
+            <ul class="feature3">
+                <li>Unlimited Users</li>
+                <li>500 GB Storage</li>
+                <li>24/7 Support</li>
+            </ul>
+        </div>
+            
+    </div><br><br>
+    <hr>
+    <h2>Mini Project 8</h2>
+    <h3>Image Gallery</h3>
+    <div class="container1">
+    <img src="nature1.jpeg" alt="Logar valley">
+    <img src="nature2.jpeg" alt="lakebled">
+    <img src="nature3.jpeg" alt="house">
+    <img src="nature4.jpeg" alt="velika">
+    <img src="nature5.jpeg" alt="lake jasna"> 
+    <img src="nature6.jpeg" alt="Bohinj">
+    <img src="nature7.jpeg" alt="Ch.Jacab"> 
+    <img src="nature8.jpeg" alt="City Ch">
+    <img src="nature9.jpeg" alt="golisa">
+    </div>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     div{
+        display: flex;
+        width: 300px;
+     }
+        
+        .box1{
+            display: flex;
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            flex-grow: 1;
+        }
+        .box2{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+           
+        }
+        aside{
+            display: flex;
+            width: 100px;
+        }
+        .item1{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+           
+            
+        }
+         .item2{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            flex-shrink: 2;
+            
+        }
+         section{
+            display: flex;
+            width: 300px;
+        }
+        .data1{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            flex-basis: auto;
+            
+        }
+         .data2{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+           
+            
+        }
+        main{
+            display: flex;
+            width: 500px;
+        }
+        .order1{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            flex-basis: auto;
+            order: 2;
+            
+        }
+         .order2{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            order: 3;
+           
+            
+        }
+        .order3{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            order: 1;
+        }
+         footer{
+            display: flex;
+            width: 700px;
+            height: 200px;
+        }
+        .style1{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+           
+            
+        }
+         .style2{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+            align-self: center;
+            
+           
+            
+        }
+        .style3{
+            border: 2px solid black;
+            width: 100px;
+            height: 50px;
+           
+        }
+        .layout{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            gap: 30px;
+            
+            width: 800px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;  
+         }
+         .login{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+         }
+         .signup{
+             display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+         }
+         nav{
+            width: 200px;
+             border: 2px solid black;
+             height: 50px;
+         }
+           .bar1{
+           width: 50px;
+           height: 20px;
+             border: 2px solid black;
+         }
+         
+         .bar2{
+            display: flex;
+           flex-grow: 1;
+             border: 2px solid black;
+        
+                     }
+    
+         
+    </style>
+</head>
+<body>
+    <div>
+    <div class="box1">box 1</div>
+    <div class="box2">box 2</div>
+    </div>
+    <br><br>
+
+
+    <aside>
+        <div class="item1">item 1</div>
+        <div class="item2">item 2</div>
+    </aside>
+     <br><br>
+
+      <section>
+        <div class="data1">data 1</div>
+        <div class="data2">data 2</div>
+      </section>
+    <br><br>
+
+    <main>
+        <div class="order1">1</div>
+        <div class="order2">2</div>
+        <div class="order3">3</div>
+    </main>
+    <br><br>
+
+    <footer>
+        <div class="style1">1</div>
+        <div class="style2">2</div>
+        <div class="style3">3</div>
+    </footer>
+
+    <br><br> 
+    
+    <main class="layout">
+        <section class="login">
+            <h3>Login form</h3>
+            <form>
+                <label>Name</label>
+                <input type="name"><br><br>
+                <label>Email Id</label>
+                <input type="email"><br><br>
+                <button>Login</button>
+            </form>
+        </section>
+        <section class="signup">
+             <h3>Sign-up form</h3>
+             <form>
+                <label>Enter your Name</label>
+                <input type="name"><br><br>
+                <label>Enter your Email</label>
+                <input type="email"><br><br>
+                <label>Enter  Password</label>
+                <input type="password"><br><br>
+                <label>Confirm Pswd</label>
+                <input type="password"><br><br>
+                <button>Sign-up</button>
+            </form>
+        </section>
+    </main>
+
+<br><br>
+<nav>
+    <a href="about" class="bar1">About</a>
+    <a href="gallery" class="bar2">Gallery</a>
+   
+</nav>
+<br><br>
+
+
+</body>
+</html>

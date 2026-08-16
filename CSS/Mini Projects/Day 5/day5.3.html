@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: yellow
+        }
+        h2{
+            text-align: center;
+            color: lightcoral;
+        }
+        
+        main{
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            margin: 50px;
+            gap: 15px;
+
+        }
+        .about{
+            border: 2px solid black;
+            width: 400px;
+            border-radius: 15px 15px;
+            box-shadow: 5px 5px;
+             background: linear-gradient(black,maroon,white);
+        }
+        .about:hover{
+            transform: scale(0.5);
+        }
+        .project{
+            border: 2px solid black;
+            width: 400px;
+             border-radius: 15px 15px;
+            box-shadow: 5px 5px;
+            background: linear-gradient(red,blue,green);
+
+
+        }
+        .project:hover{
+             transform: scale(0.5);
+        }
+        .team{
+            border: 2px solid black;
+            width: 400px;
+             border-radius: 15px 15px;
+            box-shadow: 5px 5px;
+             background: linear-gradient(pink,lightblue,orange)
+
+        }
+        .team:hover{
+             transform: scale(0.5);
+        }
+        .plans{
+            box-shadow: 5px 5px;
+            padding: 50px;
+            display: grid;
+            border: 2px solid black;
+            width: 600px;
+            grid-template-columns: 200px 200px 200px;
+            background-color: peachpuff;
+        }
+        button{
+            transition: background-color 0.4s ease; 
+            background-color: lightgreen;
+            transition: all 5s ease-in-out;
+
+        }
+        button:hover{
+            color: orangered;
+           
+        }
+        .basic{
+            text-shadow: 1px 1px;
+        }
+        .basic:hover{
+            color: red;
+        }
+         .pro:hover{
+            color: lightseagreen
+        }
+         .premium:hover{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Project 5</h1>
+
+ <h2>Our Services</h2>
+ <main>
+ <div class="about">
+    <h3>About Us</h3>
+    <p>We are developing a webpages with great ideas and reasonable price</p>
+ </div>
+ <div class="project">
+    <h3>Our Projects</h3>
+    <p>We create innovative projects that support our mission to promote</p>
+
+ </div>
+ <div class="team">
+    <h3>Our teams</h3>
+    <p>We have a excellent team with more than 10 years of experiences</p>
+
+ </div>
+
+</main>
+<h1>Mini Project 6</h1>
+ <h2>Pricing Plans</h2>
+<main class="plans">
+   
+    <section class="basic">
+        <P>Price:199</P>
+        <p>Data:2GB</p>
+        <p>Validity:28 days</p>
+        <p>Calls:Unlimited</p>
+        <button>Recharge</button>
+</section>
+ <section class="pro">
+        <P>Price:299</P>
+        <p>Data:4GB</p>
+        <p>Validity:28 days</p>
+        <p>Calls:Unlimited</p>
+        <button>Recharge</button>
+</section>
+ <section class="premium">
+        <P>Price:599</P>
+        <p>Data:7GB</p>
+        <p>Validity:28 days</p>
+        <p>Calls:Unlimited</p>
+        <button>Recharge</button>
+</section>
+</main>
+    
+
+</body>
+</html>

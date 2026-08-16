@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid black;
+            gap: 10px;
+        }
+        .box{
+             border: 2px solid black;
+             width: 100px;
+             grid-column: span 2;
+
+        }
+        .row{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            border: 2px solid black;
+            gap: 10px;
+            margin: 10px;
+        }
+        .item{
+           border: 2px solid black;
+           height: 50px;
+           grid-row: span 2;
+           justify-self: start;
+        
+        }
+        .layout{
+              display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            border: 2px solid black;
+            grid-auto-rows: 150px;
+            gap: 30px;
+           
+        }
+        .data{
+            border: 2px solid black;
+            
+        }
+        .data1{
+            grid-column-start: 2;
+             align-self: self-end;
+        }
+        .grid-container{
+            display: grid;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+             border: 2px solid black;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        }
+        .dashboard{
+            display: grid;
+            grid-template-columns: repeat(3,2fr);
+            grid-template-rows: repeat(3,2fr);
+            grid-template-areas: "header header" "sidebar sidebar" "content content";
+        }
+        header{
+            grid-area: header;
+        }
+        aside{
+            grid-area: sidebar;
+        }
+        main{
+            grid-area: content;
+        }
+        .card-grid {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+             gap: 16px;
+        }
+        .card{
+            border: 2px solid black;
+        }
+        .main-content{
+            border: 2px solid black;
+            grid-template-columns: 2fr 1fr;
+            width: 400px;
+            height: 150px;
+        }
+        p,h3{
+             border: 2px solid black;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="column">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+
+     <div class="row">
+        <div class="item">Box1</div>
+        <div class="item">Box2</div>
+        <div class="item">Box3</div>
+        <div class="item">Box4</div>
+    </div>
+
+    <div class="layout">
+        <div class="data data1">Box1</div>
+        <div class="data data2">Box2</div>
+        <div class="data data3">Box3</div>
+       
+    </div>
+
+    <div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</div>
+
+<div class="dashboard">
+    <header>This is heading area</header>
+    <aside>This is Sidebar area</aside>
+    <main>This is content area</main>
+</div>
+
+<div class="card-grid">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+</div>
+
+<main class="main-content">
+    <h3>Heading area</h3>
+    <p>Description area</p>
+</main>
+</body>
+</html>

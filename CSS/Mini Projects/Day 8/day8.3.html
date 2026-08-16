@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: pink;
+        }
+        .container{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+            height: 200px;
+            align-items: center;
+        }
+        .basic{
+             border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+         .pro{
+             border: 2px solid black;
+            display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+        }
+         .premium{
+             border: 2px solid black;
+            display: flex;
+              flex-direction: column;
+              box-shadow: 10px 10px 5px;
+              background: radial-gradient(pink,lightblue,lightgreen);
+        }
+        .basic:hover{
+            background-color: red;
+            font-size: large;
+        }
+        .pro:hover{
+            background-color: yellow;
+             font-size: large;
+        }
+        .premium:hover{
+            background-color: magenta;
+             font-size: large;
+        }
+        .link{
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+        }
+        nav{
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Project 5</h1>
+    <h2>Pricing Plans</h2>
+    <div class="container">
+        
+        <div class="basic">Price:$50
+            <ol>
+                <li>2 GB </li>
+                <li>1 User</li>
+                <li>28/days</li>
+                <li>limited calls</li>
+            </ol>
+        </div>
+        <div class="pro">Price:$70
+            <ol type="a">
+                <li>5 GB</li>
+                 <li>2 User</li>
+                <li>28/days</li>
+                <li>Unlimited calls</li>
+            </ol>
+        </div>
+        <div class="premium">Price:$100
+            <ul style="list-style-type: square;">
+                <li>10 GB</li>
+                <li>Unlimite users</li>
+                <li>60/days</li>
+                <li>Unlimited calls</li>
+            </ul>
+        </div>
+    </div>
+    
+    <h1>Mini Project 6</h1>
+    <h2>Navigation Bar</h2>
+    <div class="link">
+        <img src="kings logo.png" alt="logo" width="200" height="200">
+        <nav>
+            <a href="about">About</a>
+            <a href="gallery">Gallery</a>
+            <a href="admission">Admission</a>
+            <a href="facilities">Facilities</a>
+            <a href="acheivements">Acheivements</a>
+            <a href="contact">Contact</a>
+        </nav>
+        <button>For more details</button>
+    </div>
+</body>
+</html>

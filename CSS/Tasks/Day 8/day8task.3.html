@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+             border: 2px solid black; box-sizing: border-box;
+             width: 200px;
+             height: 50px;
+            gap: 10px;
+               align-items: baseline;
+           flex-direction: row-reverse;
+        }
+        .order1{
+          
+            border: 2px solid black;
+        }
+         .order2{
+             
+            border: 2px solid black;
+            
+        }
+         section{
+             box-sizing: border-box;
+            display: flex;
+             border: 2px solid black;
+             width: 400px;
+             height: 100px;
+             gap: 20px;
+            justify-content: flex-start;
+            flex-direction: column-reverse;
+        }
+        .box1{
+             width: 100px;
+
+            
+            border: 2px solid black;
+        }
+         .box2{
+             width: 100px;
+             
+            border: 2px solid black;
+            
+        }
+         aside{
+            display: flex;
+             border: 2px solid black;
+             width: 400px;
+             height: 100px;
+            align-items: stretch;
+           
+        }
+        .item1{
+             width: 100px;
+
+            
+            border: 2px solid black;
+        }
+         .item2{
+             width: 100px;
+             
+            border: 2px solid black;
+            
+        }
+         .gallery{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 700px;
+            height: 150px;
+         }
+         nav{
+              display: flex;
+             border: 2px solid black;
+             width: 200px;
+             height: 100px;
+         }
+         footer{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 200px;
+             border: 2px solid black;
+            
+         }
+         .login{
+              display: flex;
+            flex-direction: column;
+            width: 200px;
+            min-height: 100vh;
+             border: 2px solid black;
+         }
+        .sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        height: 300px;
+        padding: 24px;
+        background-color: gray;
+        color: white;
+        box-sizing: border-box;
+        flex-basis: auto;
+        
+        }
+        h4{
+             border: 2px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        p{
+             border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+      <main>
+        <div class="order1">1</div>
+        <div class="order2">2</div>
+    </main><br><br>
+
+     <section>
+    <div class="box1">box 1</div>
+    <div class="box2">box 2</div>
+     </section>
+    <br><br>
+    
+    
+    <aside>
+        <div class="item1">item 1</div>
+        <div class="item2">item 2</div>
+    </aside><br><br>
+
+    <main class="gallery">
+        <img src="birds.jpeg" alt="birds" width="100" height="100">
+        <img src="birds1.jpeg" alt="birds" width="100" height="100">
+        <img src="birds2.jpg" alt="birds" width="100" height="100">
+        <img src="birds3.jpeg" alt="birds" width="100" height="100">
+        <img src="birds4.jpeg" alt="birds" width="100" height="100">
+        <img src="birds5.jpeg" alt="birds" width="100" height="100">
+    </main><br>
+
+    <nav>
+            <img src="about.png" alt="about" width="100" height="100">
+             <a href="about">About</a>
+    </nav>
+<br>
+    <footer>
+        <img src="birds.jpeg" alt="birds" width="100" height="100">
+        <p>Birds are Singing</p>
+        <button>Submit</button>
+    </footer><br><br>
+
+     <section class="login">
+            <h3>Login form</h3>
+            <form>
+                <label>Name</label>
+                <input type="name"><br><br>
+                <label>Email Id</label>
+                <input type="email"><br><br>
+                <button>Login</button>
+            </form>
+        </section>
+        <br><br>
+
+         <aside class="sidebar">
+        <h4>This is sidebar content</h4>
+        <p>Write here</p>
+    </aside>
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+         .container1{
+            display: grid;
+            grid-template-rows: 100px 200px auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        .container2{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+        }
+        .cards{
+             border: 2px solid black;
+             display: grid;
+             width: 200px;
+             height: 500px;
+             gap: 10px;
+             margin: 10px;
+        }
+        .card{
+             border: 2px solid black;
+             display: grid;
+             width: 100px;
+             height: 50px;
+             gap: 10px;
+             margin: 10px;
+        }
+        .gallery1{
+            display: grid;
+            border: 2px solid black;
+            width: 50%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+        }
+        
+        .rows{
+            display: grid;
+            width: 200px;
+            margin: 10px;
+            border:  2px solid black;
+            grid-template-rows: 100px 50px 200px;
+
+        }
+       .gallery{
+        display: grid;
+         border:  2px solid black;
+         width: 300px;
+       }
+       img:hover{
+        transform: scale(2.0);
+       }
+       .item{
+        display: grid;
+         border:  2px solid black;
+         width: 600px;
+         height: 200px;
+         gap: 20px;
+        
+       }
+       .data{
+         border:  2px solid black;
+    
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+    </div>
+    <div class="container1">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+
+    </div>
+    <div class="container2">
+        <div class="box">b1</div>
+        <div class="box">b2</div>
+        <div class="box">b3</div>
+
+    </div>
+
+
+<div class="cards">
+    <div class="card">Card1</div>
+    <div class="card">Card2</div>
+    <div class="card">Card3</div>
+    <div class="card">Card4</div>
+    <div class="card">Card5</div>
+    <div class="card">Card6</div>
+</div>
+
+<div class="gallery1">
+    <img src="birds.jpeg" alt="birds" width="100" height="100">
+    <img src="birds1.jpeg" alt="birds" width="100" height="100">
+    <img src="birds2.jpg" alt="birds" width="100" height="100">
+    <img src="birds3.jpeg" alt="birds" width="100" height="100">
+    <img src="birds4.jpeg" alt="birds" width="100" height="100">
+    <img src="birds5.jpeg" alt="birds" width="100" height="100">
+</div>
+
+<div class="rows">
+    <header>This is heading area</header>
+    <section>This is content area</section>
+    <footer>All rights reserved</footer>
+
+</div>
+
+<div class="gallery">
+    <img src="birds.jpeg" alt="gallery">
+</div>
+
+<div class="item">
+    <div class="data">data1</div>
+    <div class="data">data2</div>
+     <div class="data">data3</div>
+</div>
+
+
+</body>
+</html>

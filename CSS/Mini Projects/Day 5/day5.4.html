@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: royalblue;
+        }
+        .contact{
+            border: 2px solid black;
+            box-shadow: 5px 5px;
+            background: radial-gradient(lightgreen,pink,lightblue);
+        }
+        input:focus{
+            border: 3px solid brown;
+        }
+        h3{
+            text-shadow: 1.5px 1.5px;
+        }
+        input:hover{
+            background-color: blueviolet;
+            font-size: medium;
+        }
+        button:hover{
+            background-color: aqua;
+            font-size: 20px;
+        }
+        .news{
+            border: 2px solid black;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 60vh;
+            text-align: center;
+            font-size: xx-large;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAcJcD_pe2-T5M3tB4BuVHrdtIhMfDaWfFGyI8pRmNA&s=10');
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            background-size: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mini Project 7</h1>
+    <h2>Contact Form</h2>
+    <form class="contact">
+        <label>Name</label>
+        <input type="name"><br><br>
+        <label>Email Id</label>
+        <input type="mail"><br><br>
+        <label>Phone Number</label>
+        <input type="number"><br><br>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="5" cols="20"></textarea> <br><br>
+        <button>Submit</button> 
+    </form>
+    <br><br>
+    
+    <h1>Mini Project 8</h1>
+    <main class="news">
+    <h3>Newsletter Signup</h3>
+    <form>
+        <label>Enter your Emil ID</label>
+        <input type="mail"><br><br>
+        <button>Sign up</button>
+    </form>
+    </main>
+</body>
+</html>

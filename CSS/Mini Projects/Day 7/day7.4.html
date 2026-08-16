@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            gap: 30px;
+            box-shadow: 10px 10px 5px;
+            width: 800px;
+            height: 300px;
+            align-items: center;
+            justify-content: center;
+        text-align: center;  
+         }
+         .login{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+         }
+         .signup{
+             display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+         }
+
+        input{
+            padding: 5px;
+            border-radius: 5px 5px;
+            background-color: aquamarine;
+           
+        }
+        button{
+            font-size: 15px;
+            color: brown;
+        }
+        button:hover{
+            background-color: orange;
+        }
+        div{
+            display: flex;
+            border: 2px solid black;
+            gap: 30px;
+            width: 800px;
+            height: 400px;
+            gap: 20px;
+        padding: 20px;    
+        }
+        .map{
+            background-color: yellow;
+             border: 2px solid black;
+        }
+        .contact{
+           background-color: pink;
+            border: 2px solid black;
+             align-items: center;
+            justify-content: center;
+        text-align: center;  
+        width: 400px;
+         }
+        
+        textarea{
+            padding: 5px;
+            border-radius: 5px 5px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+     <h1>Mini Project 7</h1>
+    
+    <main>
+        <section class="login">
+            <h3>Login form</h3>
+            <form>
+                <label>Name</label>
+                <input type="name"><br><br>
+                <label>Email Id</label>
+                <input type="email"><br><br>
+                <button>Login</button>
+            </form>
+        </section>
+        <section class="signup">
+             <h3>Sign-up form</h3>
+             <form>
+                <label>Enter your Name</label>
+                <input type="name"><br><br>
+                <label>Enter your Email Id</label>
+                <input type="email"><br><br>
+                <label>Enter your Password</label>
+                <input type="password"><br><br>
+                  <label>Confirm your Password</label>
+                <input type="password"><br><br>
+                <button>Sign-up</button>
+            </form>
+        </section>
+    </main>
+
+     <h1>Mini Project 8</h1>
+     <div>
+        <aside class="map">
+            <h3>Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504840.6105027172!2d77.1393396278592!3d8.685153225273092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b069d57c30ef193%3A0xc3b0b2047ab1c486!2sVetri%20Computer%20Centre%2C%20Surandai!5e0!3m2!1sen!2sin!4v1786048506204!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </aside>
+        <aside class="contact">
+            <h3>Contact Form</h3>
+            <form>  
+                <label>Name</label>
+                <input type="name"><br><br>
+                <label> Email Id</label>
+                <input type="email"><br><br>
+                <label>Phone Number</label>
+                <input type="number"><br><br>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" cols="`0"></textarea><br><br>
+                <button>Submit</button>
+
+            </form>
+        </aside>
+     </div>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .order{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .box1{
+            order: 1;
+        }
+        .box2{
+            order: 0;
+        }
+        .box3{
+            order: -1;
+        }
+
+        .order1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 200px;
+        }
+        .no3{
+            align-self: flex-end;
+            height: 50px;
+        }
+        .card{
+            display: flex;
+            flex-direction: row-reverse;
+        
+        }
+    
+         section{
+            border: 2px solid black;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+         div{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+       
+       
+       
+        main{
+            display: flex;
+            flex-direction: column;
+           width: 600px;
+           height: 700x;
+            border: 2px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            gap: 30px;
+            
+        }
+        .aside1{
+            display: flex;
+            flex-direction: column;
+             border: 2px solid black;
+             width: 50%;
+        }
+        .aside2{
+            display: flex;
+            flex-direction: column;
+             border: 2px solid black;
+             width: 50%;
+        }
+        .card1{
+            display: flex;
+            align-items: stretch;
+
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="order">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box2">3</div>
+    </div>
+    <br><br>
+
+    
+    <div class="order1">
+        <div class="no1">A</div>
+        <div class="no2">B</div>
+        <div class="no3">C</div>
+    </div>
+    <br><br>
+
+
+    <div class="card">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+    <br><br>
+
+
+    <section>
+        <p>Good Morning</p>
+        <p>Good afternoon</p>
+    </section>
+    <br><br>
+
+
+     <div>
+        <p>Price:$5</p>
+        <p>Price:$5</p>
+        <p>Price:$5</p>
+    </div>
+    <br><br>
+
+    <main class="outer">
+        <aside class="aside1">
+        <p>This is inner area</p>
+        <p>Write here</p>
+        </aside>
+
+        <aside class="aside2">
+            <p>This is aside area</p>
+            <p>Write here</p>
+        </aside>
+    </main>
+<br><br>
+
+
+    <footer class="card1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        
+    </footer>
+    <br><br>
+
+    <div class="login">
+       <form>
+        <label>Name</label>
+        <input type="name"><br><br>
+        <label>Email</label>
+        <input type="mail"><br><br>
+        <button>Login</button>
+    </form>
+    </div>
+
+
+    </body>
+</html>

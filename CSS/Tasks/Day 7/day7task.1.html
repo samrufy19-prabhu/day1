@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            display: flex;
+           justify-content: flex-end;
+        }
+        section{
+            display: flex;
+            justify-content:space-between ;
+        }
+        aside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 250px;
+        height: 300px;
+        padding: 24px;
+        background-color: gray;
+        color: white;
+        box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            background-color: pink;
+            width: 300px;
+            height: 50px;
+            justify-content: space-around;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50px;
+           
+            align-content: flex-end;
+        }
+         .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .container{
+            display: flex;
+            width: 100px;
+            flex-wrap: wrap;
+            border: 2px solid black;
+
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <P>CSS</P>
+        <P>Cascading Style Sheets</P>
+    </div>
+    <main>
+        <h5>HTML</h5>
+        <h5>Hypertext Markup Language</h5>
+    </main>
+    <section>
+        <p>Hello! Good Morning</p>
+        <p>Have a nice day</p>
+    </section>
+    <aside>
+        <h4>This is sidebar content</h4>
+        <p>Write here</p>
+    </aside>
+    <nav>
+        <a href="about">About</a>
+        <a href="gallery">Gallery</a>
+        <a href="contact">Contact</a>
+    </nav>
+    <section class="parent">
+        <p>CSS</p>
+        <p>HTML</p>
+        <p>Java</p>
+    </section>
+    <main class="flex">
+        <p>box1</p>
+        <p>box2</p>
+        <p>box3</p>
+    </main>
+     <div class="card">
+        <p>Horse for Battle</p>
+        <p>Victory from lord</p>
+    </div>
+    <section class="container">
+        <p>Grateful</p>
+        <p>Thankful</p>
+        <p>Blessed</p>
+    </section>
+    <footer>
+        <a href="visit">Visit again</a>
+    </footer>
+</body>
+</html>

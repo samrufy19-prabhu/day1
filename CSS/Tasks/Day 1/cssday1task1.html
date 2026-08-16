@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+      box-sizing: border-box;
+   }
+    p{
+            line-height: 1.6;
+         }
+         .box{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+         }
+         #main-title{
+            color: red;
+            text-align: center;
+         }
+         .bordered{
+            border: 5px solid black;
+            
+         }
+         input{
+            padding: 10px;
+            border-radius: 5px;
+         }
+         footer span{
+            font-size: 14px;
+            color: gray;
+         }
+         section>p{
+            color: darkgreen;
+         }
+         h2~p{
+            font-style: oblique;
+         }
+         input:focus{
+            background-color: magenta;
+         }
+         tr:nth-child(even){
+            background-color: lightblue;
+         }
+         p::first-letter{
+            font-size: 200%;
+            text-transform: uppercase;
+         }
+         p::selection{
+            background-color: orange;
+            color: white;
+         }
+</style>
+<body>
+     <p>Hello, How are you?</p>
+     <p>Nice to meet you</p>
+<hr>
+<p class="box">This is a box</p>
+<hr>
+
+<h6 id="main-title">This is a Main title</h6>
+<hr>
+
+
+<p class="bordered">Welcome to my web page</p>
+<hr>
+
+<form>
+    <label>Name</label>
+    <input type="text"><br><br>
+    <label>Email ID</label>
+    <input type="mail"><br><br>
+</form>
+<hr>
+<section>
+   <p>Hello</p>
+   <p>How are you?</p>
+   <div>
+      <p>Nice to meet you</p>
+   </div>
+</section>
+<hr>
+
+<h2>Birds</h2>
+<p>Birds are singing</p>
+<p>Birds are flying</p>
+<hr>
+
+<form>
+   <label>Name</label>
+   <input type="text"><br><br>
+   <label>Age</label>
+   <input type="age"><br><br>
+   <label>Number</label>
+   <input type="number">
+</form><hr>
+
+<table border="1">
+   <tr>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Experience</th>
+   </tr>
+   <tr>
+      <td>Prabhu</td>
+      <td>Manager</td>
+      <td>2 years</td>
+   </tr>
+   <tr>
+      <td>Jackson</td>
+      <td>Director</td>
+      <td>5 years</td>
+   </tr>
+   <tr>
+      <td>Adley</td>
+      <td>Designer</td>
+      <td>1.5 years</td>
+   </tr>
+   <tr>
+      <td>Ruby</td>
+      <td>Developer</td>
+      <td>3 years</td>
+   </tr>
+</table><hr>
+
+<footer>
+   <span>All righs reserved</span>
+   <span>@ 2020 copy rights</span>
+</footer>
+</body>
+</html>
