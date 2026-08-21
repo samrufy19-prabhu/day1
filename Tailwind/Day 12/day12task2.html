@@ -7,154 +7,209 @@
     <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" 
     rel="stylesheet">
 </head>
-<body>
-    <body class="bg-slate-950 text-white">
+  <body class="bg-gray-950 text-white">
 
-  <!-- Navbar -->
-  <nav class="border-b border-slate-800 bg-slate-950">
-    <div class="max-w-6xl mx-auto px-6 py-5
-                flex flex-col gap-4
-                md:flex-row md:items-center md:justify-between">
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-gray-900 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-4">
 
-      <a href="#" class="text-2xl font-bold text-cyan-400">
-        Alex<span class="text-white">.dev</span>
-      </a>
+      <div class="flex items-center justify-between">
 
-      <div class="flex flex-col gap-3
-                  md:flex-row md:items-center md:gap-6
-                  lg:gap-8">
-        <a href="#home" class="hover:text-cyan-400 transition">Home</a>
-        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
-        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-cyan-400">
+          Sam<span class="text-white">Ruby</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+          <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+          <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+          <a href="#about" class="hover:text-cyan-400 transition">About</a>
+          <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="block md:hidden text-2xl text-cyan-400"
+          aria-label="Open menu">
+          ☰
+        </button>
+
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="max-w-6xl mx-auto px-6 py-16
-                            md:py-20 lg:py-28">
 
-    <!-- Mobile: vertical | md+: horizontal -->
-    <div class="flex flex-col items-center text-center gap-10
-                md:flex-row md:text-left md:justify-between
-                md:gap-12
-                lg:gap-20">
+  <!-- ================= HERO ================= -->
+  <section id="home" class="min-h-screen flex items-center">
 
-      <!-- Profile Image -->
-      <div class="shrink-0">
-        <img
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
-          alt="Alex Morgan"
-          class="w-48 h-48 rounded-full object-cover
-                 border-4 border-cyan-400 shadow-lg shadow-cyan-400/20
-                 md:w-56 md:h-56
-                 lg:w-72 lg:h-72"
-        />
-      </div>
+    <div class="max-w-7xl mx-auto px-6 py-16 w-full">
 
-      <!-- Hero Information -->
-      <div class="max-w-2xl">
-        <p class="text-cyan-400 font-semibold mb-3">
-          Hello, I'm
-        </p>
+      <!--
+        Mobile: flex-col
+        md+: flex-row
+      -->
+      <div class="flex flex-col md:flex-row items-center gap-12">
 
-        <h1 class="text-4xl font-extrabold leading-tight
-                   md:text-5xl
-                   lg:text-6xl">
-          Alex Morgan
-        </h1>
+        <!-- Profile Image -->
+        <div class="w-full md:w-1/2 flex justify-center">
 
-        <h2 class="mt-3 text-2xl font-semibold text-slate-300
-                   md:text-3xl
-                   lg:text-4xl">
-          Full Stack Developer
-        </h2>
+          <div class="relative">
 
-        <p class="mt-6 text-slate-400 leading-relaxed
-                  md:text-lg
-                  lg:text-xl">
-          I build modern, responsive, and user-friendly web applications
-          using technologies like HTML, CSS, JavaScript, React, and Node.js.
-        </p>
+            <div class="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80
+                        rounded-full overflow-hidden
+                        border-4 border-cyan-400
+                        shadow-2xl shadow-cyan-500/30">
 
-        <div class="mt-8 flex flex-col gap-4
-                    md:flex-row">
+              <img
+                src="data:image/jpeg;base64,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""
+                alt="Profile photo"
+                class="w-full h-full object-cover"
+              />
+
+            </div>
+
+            <!-- Decorative Circle -->
+            <div class="absolute -bottom-4 -right-4
+                        w-20 h-20 bg-cyan-400
+                        rounded-full -z-10">
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Hero Content -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+
+          <p class="text-cyan-400 font-semibold text-lg mb-3">
+            Hello, I'm
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl
+                     font-bold mb-4">
+            Sam Ruby
+          </h1>
+
+          <h2 class="text-2xl sm:text-3xl
+                     font-semibold text-gray-300 mb-6">
+            Frontend Developer
+          </h2>
+
+          <p class="text-gray-400 leading-relaxed
+                    max-w-xl mx-auto md:mx-0 mb-8">
+            I create modern, responsive and user-friendly websites
+            using HTML, CSS, JavaScript, Tailwind CSS and modern
+            frontend technologies.
+          </p>
+
           <a
             href="#projects"
-            class="px-6 py-3 rounded-lg bg-cyan-500 text-slate-950
-                   font-bold hover:bg-cyan-400 hover:scale-105
-                   transition duration-300"
-          >
-            View My Projects
+            class="inline-block bg-cyan-500 hover:bg-cyan-600
+                   text-gray-950 font-bold
+                   px-7 py-3 rounded-lg
+                   transition duration-300">
+            View My Work
           </a>
 
-          <a
-            href="#contact"
-            class="px-6 py-3 rounded-lg border border-cyan-400
-                   text-cyan-400 font-bold
-                   hover:bg-cyan-400 hover:text-slate-950
-                   transition duration-300"
-          >
-            Contact Me
-          </a>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="bg-slate-900 px-6 py-16
-                              md:py-20 lg:py-24">
 
-    <div class="max-w-6xl mx-auto">
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="bg-gray-900 py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
       <div class="text-center mb-12">
-        <p class="text-cyan-400 font-semibold">WHAT I KNOW</p>
-        <h2 class="text-3xl font-bold mt-2
-                   md:text-4xl
-                   lg:text-5xl">
-          My Skills
+        <p class="text-cyan-400 font-semibold">MY EXPERTISE</p>
+
+        <h2 class="text-3xl sm:text-4xl font-bold mt-2">
+          Skills
         </h2>
+
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+          Technologies and tools I use to build modern web applications.
+        </p>
       </div>
 
-      <!-- Mobile: 1 | Tablet: 2 | Desktop: 4 -->
-      <div class="grid grid-cols-1 gap-6
-                  md:grid-cols-2
-                  lg:grid-cols-4">
 
-        <div class="bg-slate-800 p-6 rounded-xl text-center
-                    hover:-translate-y-2 transition duration-300">
-          <div class="text-4xl mb-4">💻</div>
-          <h3 class="text-xl font-bold">HTML & CSS</h3>
-          <p class="text-slate-400 mt-2">
-            Semantic HTML and responsive layouts with Tailwind CSS.
+      <!--
+        Mobile: 1 column
+        sm: 2 columns
+        md: 3 columns
+        lg: 4 columns
+      -->
+      <div class="grid grid-cols-1 sm:grid-cols-2
+                  md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
+          <div class="text-4xl mb-4">🌐</div>
+          <h3 class="text-xl font-bold mb-2">HTML</h3>
+          <p class="text-gray-400">
+            Semantic and accessible web structure.
           </p>
         </div>
 
-        <div class="bg-slate-800 p-6 rounded-xl text-center
-                    hover:-translate-y-2 transition duration-300">
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
+          <div class="text-4xl mb-4">🎨</div>
+          <h3 class="text-xl font-bold mb-2">CSS</h3>
+          <p class="text-gray-400">
+            Modern layouts, animations and responsive designs.
+          </p>
+        </div>
+
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
           <div class="text-4xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold">JavaScript</h3>
-          <p class="text-slate-400 mt-2">
+          <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+          <p class="text-gray-400">
             Interactive and dynamic web experiences.
           </p>
         </div>
 
-        <div class="bg-slate-800 p-6 rounded-xl text-center
-                    hover:-translate-y-2 transition duration-300">
-          <div class="text-4xl mb-4">⚛️</div>
-          <h3 class="text-xl font-bold">React</h3>
-          <p class="text-slate-400 mt-2">
-            Reusable components and modern frontend applications.
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
+          <div class="text-4xl mb-4">💨</div>
+          <h3 class="text-xl font-bold mb-2">Tailwind CSS</h3>
+          <p class="text-gray-400">
+            Fast and responsive UI development.
           </p>
         </div>
 
-        <div class="bg-slate-800 p-6 rounded-xl text-center
-                    hover:-translate-y-2 transition duration-300">
-          <div class="text-4xl mb-4">🟢</div>
-          <h3 class="text-xl font-bold">Node.js</h3>
-          <p class="text-slate-400 mt-2">
-            Fast and scalable backend applications and APIs.
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
+          <div class="text-4xl mb-4">⚛️</div>
+          <h3 class="text-xl font-bold mb-2">React</h3>
+          <p class="text-gray-400">
+            Component-based frontend applications.
+          </p>
+        </div>
+
+        <!-- Skill -->
+        <div class="bg-gray-800 p-6 rounded-xl
+                    hover:-translate-y-2 transition duration-300
+                    border border-gray-700">
+          <div class="text-4xl mb-4">🐙</div>
+          <h3 class="text-xl font-bold mb-2">Git</h3>
+          <p class="text-gray-400">
+            Version control and collaborative development.
           </p>
         </div>
 
@@ -162,150 +217,236 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16
-                                md:py-20 lg:py-24">
 
-    <div class="text-center mb-12">
-      <p class="text-cyan-400 font-semibold">MY WORK</p>
-      <h2 class="text-3xl font-bold mt-2
-                 md:text-4xl
-                 lg:text-5xl">
-        Featured Projects
-      </h2>
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+        <p class="text-cyan-400 font-semibold">MY WORK</p>
+
+        <h2 class="text-3xl sm:text-4xl font-bold mt-2">
+          Projects
+        </h2>
+      </div>
+
+
+      <!--
+        Mobile: 1 column
+        sm: 2 columns
+        lg: 4 columns
+      -->
+      <div class="grid grid-cols-1 sm:grid-cols-2
+                  lg:grid-cols-4 gap-6">
+
+        <!-- Project 1 -->
+        <div class="bg-gray-900 rounded-xl overflow-hidden
+                    border border-gray-800
+                    hover:-translate-y-2
+                    transition duration-300">
+
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+            alt="E-commerce project"
+            class="w-full h-48 object-cover"
+          />
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">
+              E-Commerce Website
+            </h3>
+
+            <p class="text-gray-400 text-sm mb-4">
+              Responsive online shopping interface with product cards
+              and modern UI.
+            </p>
+
+            <a href="#"
+               class="text-cyan-400 font-semibold hover:text-cyan-300">
+              View Project →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="bg-gray-900 rounded-xl overflow-hidden
+                    border border-gray-800
+                    hover:-translate-y-2
+                    transition duration-300">
+
+          <img
+            src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80"
+            alt="Blog project"
+            class="w-full h-48 object-cover"
+          />
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">
+              Blog Platform
+            </h3>
+
+            <p class="text-gray-400 text-sm mb-4">
+              Clean blogging interface designed for reading and
+              content discovery.
+            </p>
+
+            <a href="#"
+               class="text-cyan-400 font-semibold hover:text-cyan-300">
+              View Project →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="bg-gray-900 rounded-xl overflow-hidden
+                    border border-gray-800
+                    hover:-translate-y-2
+                    transition duration-300">
+
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+            alt="Business dashboard"
+            class="w-full h-48 object-cover"
+          />
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">
+              Business Dashboard
+            </h3>
+
+            <p class="text-gray-400 text-sm mb-4">
+              Dashboard interface for viewing business analytics
+              and performance data.
+            </p>
+
+            <a href="#"
+               class="text-cyan-400 font-semibold hover:text-cyan-300">
+              View Project →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Project 4 -->
+        <div class="bg-gray-900 rounded-xl overflow-hidden
+                    border border-gray-800
+                    hover:-translate-y-2
+                    transition duration-300">
+
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+            alt="Team management project"
+            class="w-full h-48 object-cover"
+          />
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">
+              Team Management
+            </h3>
+
+            <p class="text-gray-400 text-sm mb-4">
+              Responsive application interface for managing teams
+              and projects.
+            </p>
+
+            <a href="#"
+               class="text-cyan-400 font-semibold hover:text-cyan-300">
+              View Project →
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <!-- Mobile: 1 | Tablet: 2 | Desktop: 4 -->
-    <div class="grid grid-cols-1 gap-8
-                md:grid-cols-2
-                lg:grid-cols-4">
 
-      <!-- Project 1 -->
-      <article class="bg-slate-900 rounded-xl overflow-hidden
-                      border border-slate-800
-                      hover:border-cyan-400 hover:-translate-y-2
-                      transition duration-300">
-        <div class="h-40 bg-gradient-to-br from-cyan-500 to-blue-700
-                    flex items-center justify-center text-5xl">
-          🛒
-        </div>
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="bg-gray-900 py-20">
 
-        <div class="p-5">
-          <h3 class="text-xl font-bold">E-Commerce Store</h3>
-          <p class="text-slate-400 mt-2">
-            A responsive online store with product listings and shopping cart.
-          </p>
+    <div class="max-w-5xl mx-auto px-6 text-center">
 
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">React</span>
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">Tailwind</span>
-          </div>
-        </div>
-      </article>
+      <p class="text-cyan-400 font-semibold">
+        ABOUT ME
+      </p>
 
-      <!-- Project 2 -->
-      <article class="bg-slate-900 rounded-xl overflow-hidden
-                      border border-slate-800
-                      hover:border-cyan-400 hover:-translate-y-2
-                      transition duration-300">
-        <div class="h-40 bg-gradient-to-br from-purple-500 to-pink-600
-                    flex items-center justify-center text-5xl">
-          📱
-        </div>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-6">
+        Building Experiences for the Web
+      </h2>
 
-        <div class="p-5">
-          <h3 class="text-xl font-bold">Task Manager</h3>
-          <p class="text-slate-400 mt-2">
-            A productivity app for creating, organizing, and tracking tasks.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">JavaScript</span>
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">CSS</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="bg-slate-900 rounded-xl overflow-hidden
-                      border border-slate-800
-                      hover:border-cyan-400 hover:-translate-y-2
-                      transition duration-300">
-        <div class="h-40 bg-gradient-to-br from-green-500 to-emerald-700
-                    flex items-center justify-center text-5xl">
-          🌦️
-        </div>
-
-        <div class="p-5">
-          <h3 class="text-xl font-bold">Weather App</h3>
-          <p class="text-slate-400 mt-2">
-            A weather dashboard showing current conditions and forecasts.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">API</span>
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">JavaScript</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 4 -->
-      <article class="bg-slate-900 rounded-xl overflow-hidden
-                      border border-slate-800
-                      hover:border-cyan-400 hover:-translate-y-2
-                      transition duration-300">
-        <div class="h-40 bg-gradient-to-br from-orange-500 to-red-600
-                    flex items-center justify-center text-5xl">
-          🍔
-        </div>
-
-        <div class="p-5">
-          <h3 class="text-xl font-bold">Food Delivery</h3>
-          <p class="text-slate-400 mt-2">
-            A restaurant ordering interface designed for mobile and desktop.
-          </p>
-
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">HTML</span>
-            <span class="text-xs bg-slate-800 px-2 py-1 rounded">Tailwind</span>
-          </div>
-        </div>
-      </article>
+      <p class="text-gray-400 leading-relaxed">
+        I'm a passionate frontend developer focused on creating
+        beautiful, responsive and accessible websites. I enjoy
+        turning ideas into interactive digital experiences while
+        continuously learning new technologies.
+      </p>
 
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-cyan-500 text-slate-950 px-6 py-16
-                               md:py-20">
 
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold
-                 md:text-4xl
-                 lg:text-5xl">
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="py-20">
+
+    <div class="max-w-3xl mx-auto px-6 text-center">
+
+      <p class="text-cyan-400 font-semibold">
+        GET IN TOUCH
+      </p>
+
+      <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-6">
         Let's Work Together
       </h2>
 
-      <p class="mt-4 text-slate-800 md:text-lg">
+      <p class="text-gray-400 mb-8">
         Have a project in mind? I'd love to hear about it.
       </p>
 
       <a
-        href="mailto:alex@example.com"
-        class="inline-block mt-8 px-8 py-3 rounded-lg bg-slate-950
-               text-white font-bold
-               hover:bg-slate-800 hover:scale-105
-               transition duration-300"
-      >
-        Get In Touch
+        href="mailto:hello@example.com"
+        class="inline-block bg-cyan-500
+               hover:bg-cyan-600
+               text-gray-950 font-bold
+               px-8 py-3 rounded-lg
+               transition">
+        Contact Me
       </a>
+
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-950 text-center text-slate-500 py-6">
-    <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 border-t border-gray-800 py-6">
+
+    <div class="max-w-7xl mx-auto px-6
+                flex flex-col sm:flex-row
+                items-center justify-between gap-4">
+
+      <p class="text-gray-400 text-sm">
+        © 2026 Sam Ruby. All rights reserved.
+      </p>
+
+      <div class="flex gap-5">
+        <a href="#" class="text-gray-400 hover:text-cyan-400">
+          GitHub
+        </a>
+
+        <a href="#" class="text-gray-400 hover:text-cyan-400">
+          LinkedIn
+        </a>
+
+        <a href="#" class="text-gray-400 hover:text-cyan-400">
+          Twitter
+        </a>
+      </div>
+
+    </div>
   </footer>
 
-</body>
-</html>
+      
+        </body>
+        </html>

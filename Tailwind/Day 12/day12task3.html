@@ -7,7 +7,209 @@
      <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" 
     rel="stylesheet">
 </head>
-<body>
-   
+   <body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600">
+          ShopEase
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Products</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="block md:hidden text-gray-700 text-2xl"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-blue-600 text-white py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+        Discover Amazing Products
+      </h1>
+      <p class="text-blue-100 text-lg">
+        Quality products at prices you'll love.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <h2 class="text-3xl font-bold text-center mb-10">
+      Our Products
+    </h2>
+
+    <!--
+      Responsive Grid:
+      Mobile  -> 1 column
+      sm      -> 2 columns
+      md      -> 3 columns
+      lg      -> 4 columns
+    -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+          alt="Running Shoes"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Running Shoes</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$59.99</p>
+          <p class="text-yellow-500 mt-2">★★★★★ <span class="text-gray-500 text-sm">(4.8)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+          alt="Smart Watch"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Smart Watch</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$89.99</p>
+          <p class="text-yellow-500 mt-2">★★★★☆ <span class="text-gray-500 text-sm">(4.5)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+          alt="Headphones"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Wireless Headphones</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$74.99</p>
+          <p class="text-yellow-500 mt-2">★★★★★ <span class="text-gray-500 text-sm">(4.9)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600"
+          alt="Laptop"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Laptop</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$799.99</p>
+          <p class="text-yellow-500 mt-2">★★★★★ <span class="text-gray-500 text-sm">(4.7)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600"
+          alt="Camera"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Digital Camera</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$449.99</p>
+          <p class="text-yellow-500 mt-2">★★★★☆ <span class="text-gray-500 text-sm">(4.4)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE74T5v7-8AjB8A0FcYzIYW6emTtPZHdgQF9ovkEnZfA&s=10"
+          alt="Perfume"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Luxury Perfume</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$64.99</p>
+          <p class="text-yellow-500 mt-2">★★★★★ <span class="text-gray-500 text-sm">(4.8)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600"
+          alt="Casual Shirt"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Casual Shirt</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$34.99</p>
+          <p class="text-yellow-500 mt-2">★★★★☆ <span class="text-gray-500 text-sm">(4.3)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600"
+          alt="Sunglasses"
+          class="w-full h-56 object-cover"
+        />
+        <div class="p-5">
+          <h3 class="text-xl font-semibold">Sunglasses</h3>
+          <p class="text-blue-600 font-bold text-lg mt-2">$29.99</p>
+          <p class="text-yellow-500 mt-2">★★★★★ <span class="text-gray-500 text-sm">(4.6)</span></p>
+          <button class="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-8">
+    <p>&copy; 2026 ShopEase. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

@@ -8,6 +8,191 @@
     rel="stylesheet">
 </head>
 <body>
-   
+   <body class="bg-gray-100 text-gray-800">
+
+  <!-- Mobile Header -->
+  <header class="lg:hidden bg-white shadow-sm px-5 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-indigo-600">AdminPanel</h1>
+
+    <button class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           class="w-6 h-6"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke="currentColor">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+
+  <div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:flex w-64 bg-gray-900 text-white flex-col">
+
+      <div class="px-6 py-6 border-b border-gray-700">
+        <h1 class="text-2xl font-bold text-indigo-400">AdminPanel</h1>
+      </div>
+
+      <nav class="flex-1 px-4 py-6 space-y-2">
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition">
+          Dashboard
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+          Students
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+          Courses
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+          Trainers
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+          Projects
+        </a>
+
+        <a href="#"
+           class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+          Settings
+        </a>
+      </nav>
+
+      <div class="px-6 py-5 border-t border-gray-700">
+        <p class="text-sm text-gray-400">Logged in as</p>
+        <p class="font-medium">Administrator</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-5 sm:p-6 lg:p-8">
+
+      <!-- Dashboard Header -->
+      <div class="mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+          Dashboard
+        </h2>
+        <p class="mt-1 text-gray-500">
+          Welcome back! Here's an overview of your platform.
+        </p>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+
+        <!-- Total Students -->
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100
+                    hover:-translate-y-1 hover:shadow-lg transition duration-300">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm font-medium text-gray-500">Total Students</p>
+              <h3 class="mt-2 text-3xl font-bold text-gray-900">2,450</h3>
+              <p class="mt-2 text-sm text-green-600">↑ 12.5% this month</p>
+            </div>
+
+            <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600
+                        flex items-center justify-center">
+              <span class="text-xl font-bold">S</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total Courses -->
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100
+                    hover:-translate-y-1 hover:shadow-lg transition duration-300">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm font-medium text-gray-500">Total Courses</p>
+              <h3 class="mt-2 text-3xl font-bold text-gray-900">86</h3>
+              <p class="mt-2 text-sm text-green-600">↑ 8.2% this month</p>
+            </div>
+
+            <div class="w-12 h-12 rounded-full bg-purple-100 text-purple-600
+                        flex items-center justify-center">
+              <span class="text-xl font-bold">C</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total Trainers -->
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100
+                    hover:-translate-y-1 hover:shadow-lg transition duration-300">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm font-medium text-gray-500">Total Trainers</p>
+              <h3 class="mt-2 text-3xl font-bold text-gray-900">42</h3>
+              <p class="mt-2 text-sm text-green-600">↑ 5.4% this month</p>
+            </div>
+
+            <div class="w-12 h-12 rounded-full bg-orange-100 text-orange-600
+                        flex items-center justify-center">
+              <span class="text-xl font-bold">T</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completed Projects -->
+        <div class="bg-white rounded-xl shadow-sm p-6 border border-gray-100
+                    hover:-translate-y-1 hover:shadow-lg transition duration-300">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm font-medium text-gray-500">Completed Projects</p>
+              <h3 class="mt-2 text-3xl font-bold text-gray-900">318</h3>
+              <p class="mt-2 text-sm text-green-600">↑ 15.8% this month</p>
+            </div>
+
+            <div class="w-12 h-12 rounded-full bg-green-100 text-green-600
+                        flex items-center justify-center">
+              <span class="text-xl font-bold">P</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Recent Activity -->
+      <section class="mt-8 bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+        <h3 class="text-xl font-bold text-gray-900">Recent Activity</h3>
+
+        <div class="mt-5 space-y-4">
+          <div class="flex items-center justify-between border-b pb-4">
+            <div>
+              <p class="font-medium">New student registered</p>
+              <p class="text-sm text-gray-500">John Doe joined Web Development</p>
+            </div>
+            <span class="text-sm text-gray-400">10 min ago</span>
+          </div>
+
+          <div class="flex items-center justify-between border-b pb-4">
+            <div>
+              <p class="font-medium">New course published</p>
+              <p class="text-sm text-gray-500">Advanced Tailwind CSS</p>
+            </div>
+            <span class="text-sm text-gray-400">1 hour ago</span>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="font-medium">Project completed</p>
+              <p class="text-sm text-gray-500">E-commerce Dashboard</p>
+            </div>
+            <span class="text-sm text-gray-400">3 hours ago</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
 </body>
 </html>
