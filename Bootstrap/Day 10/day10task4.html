@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f8fc;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+            color: white;
+            padding: 70px 20px;
+        }
+
+        .doctor-card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .doctor-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #e7f1ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            margin: 0 auto 20px;
+        }
+
+        .modal-header {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MediCare Hospital</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#doctors">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#departments">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Our Expert Doctors</h1>
+        <p class="lead">
+            Meet our experienced medical professionals and book your appointment.
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= DOCTORS ================= -->
+<section id="doctors" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-5">Meet Our Doctors</h2>
+
+        <div class="row g-4">
+
+            <!-- Doctor 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card doctor-card shadow-sm">
+                    <div class="card-body text-center p-4">
+
+                        <div class="doctor-icon">👨‍⚕️</div>
+
+                        <h4 class="card-title">Dr. Arun Kumar</h4>
+
+                        <p class="text-primary fw-semibold mb-2">
+                            Cardiologist
+                        </p>
+
+                        <p class="text-muted">
+                            <strong>Experience:</strong> 12 Years
+                        </p>
+
+                        <p class="card-text">
+                            Specialist in heart care, cardiac diagnosis
+                            and preventive cardiology.
+                        </p>
+
+                        <button
+                            class="btn btn-primary w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal"
+                            data-doctor="Dr. Arun Kumar">
+                            Book Appointment
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Doctor 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card doctor-card shadow-sm">
+                    <div class="card-body text-center p-4">
+
+                        <div class="doctor-icon">👩‍⚕️</div>
+
+                        <h4 class="card-title">Dr. Priya Sharma</h4>
+
+                        <p class="text-primary fw-semibold mb-2">
+                            Pediatrician
+                        </p>
+
+                        <p class="text-muted">
+                            <strong>Experience:</strong> 10 Years
+                        </p>
+
+                        <p class="card-text">
+                            Dedicated to providing comprehensive healthcare
+                            for infants, children and teenagers.
+                        </p>
+
+                        <button
+                            class="btn btn-primary w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal"
+                            data-doctor="Dr. Priya Sharma">
+                            Book Appointment
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Doctor 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card doctor-card shadow-sm">
+                    <div class="card-body text-center p-4">
+
+                        <div class="doctor-icon">👨‍⚕️</div>
+
+                        <h4 class="card-title">Dr. Rahul Mehta</h4>
+
+                        <p class="text-primary fw-semibold mb-2">
+                            Orthopedic Surgeon
+                        </p>
+
+                        <p class="text-muted">
+                            <strong>Experience:</strong> 15 Years
+                        </p>
+
+                        <p class="card-text">
+                            Expert in bone, joint and muscle disorders,
+                            sports injuries and orthopedic surgery.
+                        </p>
+
+                        <button
+                            class="btn btn-primary w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal"
+                            data-doctor="Dr. Rahul Mehta">
+                            Book Appointment
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Doctor 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card doctor-card shadow-sm">
+                    <div class="card-body text-center p-4">
+
+                        <div class="doctor-icon">👩‍⚕️</div>
+
+                        <h4 class="card-title">Dr. Sneha Reddy</h4>
+
+                        <p class="text-primary fw-semibold mb-2">
+                            Dermatologist
+                        </p>
+
+                        <p class="text-muted">
+                            <strong>Experience:</strong> 8 Years
+                        </p>
+
+                        <p class="card-text">
+                            Specializes in skin, hair and nail conditions
+                            along with cosmetic dermatology.
+                        </p>
+
+                        <button
+                            class="btn btn-primary w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#appointmentModal"
+                            data-doctor="Dr. Sneha Reddy">
+                            Book Appointment
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= DEPARTMENTS ================= -->
+<section id="departments" class="bg-white py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">Departments</h2>
+        <p class="text-muted">
+            Cardiology · Pediatrics · Orthopedics · Dermatology
+        </p>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="mb-1">📞 +91 98765 43210</p>
+        <p>✉️ info@medicarehospital.com</p>
+    </div>
+</section>
+
+
+<!-- ================= APPOINTMENT MODAL ================= -->
+<div
+    class="modal fade"
+    id="appointmentModal"
+    tabindex="-1"
+    aria-labelledby="appointmentModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="appointmentModalLabel">
+                    Book an Appointment
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="appointmentForm">
+
+                    <!-- Patient Name -->
+                    <div class="mb-3">
+                        <label for="patientName" class="form-label">
+                            Patient Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="patientName"
+                            placeholder="Enter patient name"
+                            required>
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter email address"
+                            required>
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required>
+                    </div>
+
+
+                    <!-- Doctor Name -->
+                    <div class="mb-3">
+                        <label for="doctorName" class="form-label">
+                            Doctor Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="doctorName"
+                            readonly>
+                    </div>
+
+
+                    <div class="row">
+
+                        <!-- Appointment Date -->
+                        <div class="col-md-6 mb-3">
+                            <label for="appointmentDate" class="form-label">
+                                Appointment Date
+                            </label>
+
+                            <input
+                                type="date"
+                                class="form-control"
+                                id="appointmentDate"
+                                required>
+                        </div>
+
+
+                        <!-- Appointment Time -->
+                        <div class="col-md-6 mb-3">
+                            <label for="appointmentTime" class="form-label">
+                                Appointment Time
+                            </label>
+
+                            <input
+                                type="time"
+                                class="form-control"
+                                id="appointmentTime"
+                                required>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Reason -->
+                    <div class="mb-4">
+                        <label for="reason" class="form-label">
+                            Reason for Visit
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            id="reason"
+                            rows="4"
+                            placeholder="Describe the reason for your visit"
+                            required></textarea>
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="d-flex justify-content-end gap-2">
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                            Close
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Book Appointment
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>
